@@ -11,14 +11,14 @@ public class Addressbuch {
     public void addContact() {
         final Scanner scanner = new Scanner(System.in);
         System.out.println("What kind of contact would you like to add? 1: Person 2: Coompany");
-        if(scanner.next() == "1") {
+        if(scanner.next().equals("1")) {
             System.out.println("Please enter the first name: ");
             final String name = scanner.next();
             System.out.println("Please the last name: ");
             final String surname = scanner.next();
             final Address address = readAddress();
             contacts.add(new Person(new Name(name, surname), address));
-        } else if (scanner.next() == "2") {
+        } else if (scanner.next().equals("2")) {
             System.out.println("Please enter the name: ");
             final String name = scanner.next();
             final Address address = readAddress();
@@ -51,7 +51,7 @@ public class Addressbuch {
     public void search(String query) {
         contacts.stream()
             .filter(contact -> contact.toString().toLowerCase().contains(query.toLowerCase()))
-            .forEach(contact -> System.out.println(contact.toString()));
+            .forEach(System.out::println);
     }
 
     public void printContacts() {
