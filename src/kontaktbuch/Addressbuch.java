@@ -56,7 +56,7 @@ public class Addressbuch {
 
     public void printContacts() {
         for (int i = 0; i < contacts.size(); i++) {
-            System.out.println("Entry: " + i);
+            System.out.println("Entry " + i + ":");
             System.out.println(contacts.get(i).toString());
         }
     }
