@@ -7,6 +7,10 @@ public class Address {
     private String postalCode;
     private String houseNumber;
 
+    Address(){
+        this("","","","");
+    }
+
     Address(String street, String city, String postalCode, String houseNumber) {
         this.street = street;
         this.city = city;

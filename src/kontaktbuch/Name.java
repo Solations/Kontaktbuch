@@ -32,6 +32,9 @@ class Name {
 
     @Override
     public String toString(){
+        if (surname == ""){
+            return name;
+        }
         return name + " " + surname;
     }
 
