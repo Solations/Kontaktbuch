@@ -10,7 +10,7 @@ public class Addressbuch {
 
     public void addContact() {
         final Scanner scanner = new Scanner(System.in);
-        System.out.println("What kind of contact would you like to add? 1: Person 2: Coompany");
+        System.out.println("What kind of contact would you like to add? 1: Person 2: Company");
         if(scanner.next().equals("1")) {
             System.out.println("Please enter the first name: ");
             final String name = scanner.next();
@@ -55,7 +55,10 @@ public class Addressbuch {
     }
 
     public void printContacts() {
-        contacts.forEach(System.out::println);
+        for (int i = 0; i < contacts.size(); i++) {
+            System.out.println("Entry: " + i);
+            System.out.println(contacts.get(i).toString());
+        }
     }
 
     private Address readAddress() {

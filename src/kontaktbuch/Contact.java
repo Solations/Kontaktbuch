@@ -28,7 +28,7 @@ abstract class Contact {
 
     @Override
     public String toString() {
-        return "Name: " + name.toString() + ", Address: " + address.toString();
+        return "Name: " + name.toString() + "\nAddress: " + address.toString();
     }
 
 }
