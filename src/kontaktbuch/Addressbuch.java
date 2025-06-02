@@ -49,17 +49,21 @@ public class Addressbuch {
     }
 
     public void search(String query) {
-        final ArrayList<Contact> searchResults = (ArrayList<Contact>) contacts.stream()
+        final List<Contact> searchResults = contacts.stream()
             .filter(contact -> contact.toString().toLowerCase().contains(query.toLowerCase()))
             .toList();
-        printListOfContacts(searchResults);
+        if (!searchResults.isEmpty()) {
+            printListOfContacts(searchResults);
+        } else {
+            System.out.println("No such contact");
+        }
     }
 
     public void printContacts() {
         printListOfContacts(contacts);
     }
 
-    private void printListOfContacts(ArrayList<Contact> contactsToPrint) {
+    private void printListOfContacts(List<Contact> contactsToPrint) {
         for (int i = 0; i < contactsToPrint.size(); i++) {
             System.out.println("Entry " + i + ":");
             System.out.println(contactsToPrint.get(i).toString());
