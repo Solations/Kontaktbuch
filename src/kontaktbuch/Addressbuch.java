@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Addressbuch {
 
-    private final ArrayList<Contact> contacts = new ArrayList<Contact>();
+    private final ArrayList<Contact> contacts = new ArrayList<>();
     private final Scanner scanner = new Scanner(System.in);
 
     public void addContact() {
