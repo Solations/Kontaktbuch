@@ -1,6 +1,7 @@
 package kontaktbuch;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -48,15 +49,20 @@ public class Addressbuch {
     }
 
     public void search(String query) {
-        contacts.stream()
+        final ArrayList<Contact> searchResults = (ArrayList<Contact>) contacts.stream()
             .filter(contact -> contact.toString().toLowerCase().contains(query.toLowerCase()))
-            .forEach(System.out::println);
+            .toList();
+        printListOfContacts(searchResults);
     }
 
     public void printContacts() {
-        for (int i = 0; i < contacts.size(); i++) {
+        printListOfContacts(contacts);
+    }
+
+    private void printListOfContacts(ArrayList<Contact> contactsToPrint) {
+        for (int i = 0; i < contactsToPrint.size(); i++) {
             System.out.println("Entry " + i + ":");
-            System.out.println(contacts.get(i).toString());
+            System.out.println(contactsToPrint.get(i).toString());
         }
     }
 
