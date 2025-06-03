@@ -38,7 +38,7 @@ Es gibt keine ungültigen Eingaben, ein Name, eine Addresse, ein ganzer Kontakt 
 # Hinweise
 ## Hinweise zur Dokumentation
 1. Aus offensichtlichen Gründen haben wir Getter- und Setter-Methoden **nicht** durch Kommentare dokumentiert...
-2. Ja, in der Aufgabe steht die Dokumentation solle im .txt Format abgegeben werden. Wir haben uns trotzdem für Markdown (.md) entschieden, da Markdown nichts anderes als plain-text ist und von jedem Texteditor ganz normal verarbeitet werden kann, allerdings den Vorteil aufweist von Markdown-Editoren zumindest etwas strukturiert dargestellt zu werden. Abgesehen davon handelt es sich quasi um das Standardformat für readMe Dateien oder Dokumentationen in der Software-Entwicklung - ganz im Gegensatz zu .txt.
+2. Ja, in der Aufgabe steht die Dokumentation solle im .txt Format abgegeben werden. Wir haben uns trotzdem für Markdown (.md) entschieden, da Markdown nichts anderes als plain-text ist und von jedem Texteditor ganz normal verarbeitet werden kann, allerdings den Vorteil aufweist von Markdown-Editoren zumindest etwas strukturiert dargestellt zu werden. Abgesehen davon handelt es sich quasi um das Standardformat für README Dateien oder Dokumentationen in der Software-Entwicklung - ganz im Gegensatz zu .txt.
 
 ## Hinweis zum "Test" der Contact-Klasse
 Eine zusätzliche Main-Klase o.ä., die die abstrakte Klasse Contact "testet", wie in Aufgabe 1 beschrieben, geben wir nicht ab. Das ist Schwachsinn und kein normal denkender Mensch würde irgendetwas so "testen".
