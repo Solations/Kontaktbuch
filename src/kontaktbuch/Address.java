@@ -7,10 +7,23 @@ public class Address {
     private String postalCode;
     private String houseNumber;
 
+    /*
+     * Empty constructor as all attributes are optional.
+     */
     Address(){
         this("","","","");
     }
 
+    /*
+     * @param street
+     *          The street as a String.
+     * @param city
+     *          The city as a String.
+     * @param postalCode
+     *          The postal code as a String.
+     * @param houseNumber
+     *          The house number as a String.
+     */
     Address(String street, String city, String postalCode, String houseNumber) {
         this.street = street;
         this.city = city;

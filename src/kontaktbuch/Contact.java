@@ -5,6 +5,12 @@ abstract class Contact {
     protected Name name;
     protected Address address;
 
+    /*
+     * @param name
+     *          The name of the contact
+     * @param address
+     *          The address of the contact
+     */
     Contact(Name name, Address address) {
         this.name = name;
         this.address = address;
