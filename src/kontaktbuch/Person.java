@@ -2,7 +2,8 @@ package kontaktbuch;
 
 class Person extends Contact {
 
-    /*
+    /**
+     * Constructs a new Person with the attributes set to the given parameters.
      * @param name
      *          The name of the contact
      * @param address
