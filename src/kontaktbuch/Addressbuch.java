@@ -7,10 +7,16 @@ import java.util.Scanner;
 
 public class Addressbuch {
 
+    /**
+     * The list of contacts in the Addressbuch.
+     */
     private final ArrayList<Contact> contacts = new ArrayList<>();
+    /**
+     * The scanner to read in user inputs for the interactive methods of the Addressbuch.
+     */
     private final Scanner scanner = new Scanner(System.in);
 
-    /*
+    /**
      * Allows the user to interactively add a contact.
      */
     public void addContact() {
@@ -34,7 +40,7 @@ public class Addressbuch {
         }
     }
 
-    /*
+    /**
      * Allows the user to interactively delete a contact.
      */
     public void deleteContact() {
@@ -54,7 +60,7 @@ public class Addressbuch {
         }
     }
 
-    /*
+    /**
      * Searches for all contacts containing the query String and prints them to the console.
      *
      * @param query
@@ -70,7 +76,7 @@ public class Addressbuch {
         printListOfContacts(searchResults);
     }
 
-    /*
+    /**
      * Pretty prints all contacts to the console.
      */
     public void printContacts() {
@@ -80,7 +86,7 @@ public class Addressbuch {
         printListOfContacts(contacts);
     }
 
-    /*
+    /**
      * Pretty prints a list of contacts to the console.
      *
      * @param contactsToPrint
@@ -93,7 +99,7 @@ public class Addressbuch {
         }
     }
 
-    /*
+    /**
      * Reads and returns an address from the console.
      */
     private Address readAddress() {
